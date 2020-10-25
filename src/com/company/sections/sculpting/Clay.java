@@ -5,7 +5,7 @@ import com.company.help.Child;
 import java.util.List;
 
 public class Clay extends Sculpting {
-    public Clay(String sectionName, int countOfSeats, List<Child> childrens) {
-        super(sectionName, countOfSeats, childrens);
+    public Clay(int id, String sectionName, int countOfSeats, List<Child> childrens) {
+        super(id, sectionName, countOfSeats, childrens);
     }
 }

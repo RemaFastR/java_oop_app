@@ -5,7 +5,7 @@ import com.company.help.Child;
 import java.util.List;
 
 public class Floursalt extends Sculpting {
-    public Floursalt(String sectionName, int countOfSeats, List<Child> childrens) {
-        super(sectionName, countOfSeats, childrens);
+    public Floursalt(int id, String sectionName, int countOfSeats, List<Child> childrens) {
+        super(id, sectionName, countOfSeats, childrens);
     }
 }

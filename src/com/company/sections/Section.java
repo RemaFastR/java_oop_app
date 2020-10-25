@@ -3,6 +3,7 @@ import com.company.help.Child;
 import java.util.List;
 
 public abstract class Section {
+    private int sectionId;
     private String sectionName;
     private int countOfSeats;
     private List<Child> childrens;
@@ -31,7 +32,16 @@ public abstract class Section {
         this.childrens = childrens;
     }
 
-    public Section(String sectionName, int countOfSeats, List<Child> childrens) {
+    public int getSectionId() {
+        return sectionId;
+    }
+
+    public void setSectionId(int sectionId) {
+        this.sectionId = sectionId;
+    }
+
+    public Section(int sectionId, String sectionName, int countOfSeats, List<Child> childrens) {
+        this.sectionId = sectionId;
         this.sectionName = sectionName;
         this.countOfSeats = countOfSeats;
         this.childrens = childrens;

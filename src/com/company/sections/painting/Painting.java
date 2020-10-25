@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Painting extends Section {
 
-    public Painting(String sectionName, int countOfSeats, List<Child> childrens) {
-        super(sectionName, countOfSeats, childrens);
+    public Painting(int id, String sectionName, int countOfSeats, List<Child> childrens) {
+        super(id,sectionName, countOfSeats, childrens);
     }
 
     @Override

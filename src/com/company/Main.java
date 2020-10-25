@@ -14,7 +14,7 @@ public class Main {
         childList.add(new Child("Aram","Ivanov","Ivanovich",13));
         childList.add(new Child("Aram","Ivanov","Ivanovich",13));
 
-        Batik batik = new Batik("Батик", 15, childList);
+        Batik batik = new Batik(1,"Батик", 15, childList);
 
         System.out.println("Childs in batik:");
         for(Object person : batik.getChildrensList()){

@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Sculpting extends Section {
 
-    public Sculpting(String sectionName, int countOfSeats, List<Child> childrens) {
-        super(sectionName, countOfSeats, childrens);
+    public Sculpting(int id, String sectionName, int countOfSeats, List<Child> childrens) {
+        super(id, sectionName, countOfSeats, childrens);
     }
 
     @Override

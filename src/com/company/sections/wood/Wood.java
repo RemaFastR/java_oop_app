@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Wood extends Section {
 
-    public Wood(String sectionName, int countOfSeats, List<Child> childrens) {
-        super(sectionName, countOfSeats, childrens);
+    public Wood(int id, String sectionName, int countOfSeats, List<Child> childrens) {
+        super(id, sectionName, countOfSeats, childrens);
     }
 
     @Override
