@@ -7,23 +7,24 @@ import java.util.List;
 
 public class Wood extends Section {
 
-    public Wood(int id, String sectionName, int countOfSeats, List<Child> childrens) {
-        super(id, sectionName, countOfSeats, childrens);
+    public Wood(int id, String sectionName, int countOfSeats, List<Child> childrens, double costPerMouth) {
+        super(id, sectionName, countOfSeats, childrens, costPerMouth);
     }
 
     @Override
     public void addChild(Child child) {
-
+        super.getChildrens().add(child);
     }
 
     @Override
     public List<Child> getChildrensList() {
-        return null;
+        if (!super.getChildrens().isEmpty()) return super.getChildrens();
+        else return null;
     }
 
     @Override
     public int getSectionCountOfSeats() {
-        return 0;
+        return super.getChildrens().size();
     }
 
 }

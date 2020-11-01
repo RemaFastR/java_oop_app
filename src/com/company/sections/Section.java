@@ -7,6 +7,7 @@ public abstract class Section {
     private String sectionName;
     private int countOfSeats;
     private List<Child> childrens;
+    private double costPerMouth;
 
     public String getSectionName() {
         return sectionName;
@@ -40,11 +41,20 @@ public abstract class Section {
         this.sectionId = sectionId;
     }
 
-    public Section(int sectionId, String sectionName, int countOfSeats, List<Child> childrens) {
+    public double getCostPerMouth() {
+        return costPerMouth;
+    }
+
+    public void setCostPerMouth(double costPerMouth) {
+        this.costPerMouth = costPerMouth;
+    }
+
+    public Section(int sectionId, String sectionName, int countOfSeats, List<Child> childrens, double costPerMouth) {
         this.sectionId = sectionId;
         this.sectionName = sectionName;
         this.countOfSeats = countOfSeats;
         this.childrens = childrens;
+        this.costPerMouth = costPerMouth;
     }
 
     public abstract void addChild(Child child);

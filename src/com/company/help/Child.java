@@ -1,5 +1,7 @@
 package com.company.help;
 
+import java.util.Formatter;
+
 public class Child {
     public String name;
     public String secondName;
@@ -48,11 +50,7 @@ public class Child {
 
     @Override
     public String toString() {
-        return "Child{" +
-                "name='" + name + '\'' +
-                ", secondName='" + secondName + '\'' +
-                ", patronymic='" + patronymic + '\'' +
-                ", age=" + age +
-                '}';
+        Formatter f = new Formatter(); // объявление объекта
+        return f.format(" \"%s\" , \"%s\" , \"%s\" , \"%d\" ",  name  , secondName , patronymic , age).toString();
     }
 }
